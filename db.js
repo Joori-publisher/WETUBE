@@ -1,6 +1,9 @@
 import mongooese from "mongoose";
+import dotenv from "dotenv";
 
-mongooese.connect("mongodb://localhost:27017/we-tube",
+dotenv.config();
+
+mongooese.connect(process.env.MONGO_URL,
     {
         useNewUrlParser:true,
         useFindAndModify:false
