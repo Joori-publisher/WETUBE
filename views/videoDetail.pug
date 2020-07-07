@@ -1,12 +1,12 @@
 extends layouts/main
 
 block content
-        .video__player
-                video(src=`/${video.fileUrl}`,controls=true)
+        .video__player(style="max-width:400px;")
+                video(src=`/${video.fileUrl}`,controls=true,style="max-width:100%;")
         .video__info
                 a(href=routes.editVideo(video.id)) Edit Video
                 h5.video__title=video.title
                 span.video__views=video.views
                 p.video__description=video.description
                 input(type="submit", value="Update Video")
-        a.form-container__link.form-container__link--delete(href=`/videos${routes.deleteVideo}`) Delete Video
+        

@@ -1,6 +1,6 @@
 mixin videoBlock(video={})
     a(href=routes.videoDetail(video.id))
-        .videoBlock
-            video.videoBlock__thumbnail(src=video.videoFile, controls=true)
+        .videoBlock(style="max-width:400px;")
+            video.videoBlock__thumbnail(src=video.videoFile, controls=true,style="max-width:100%;")
         h4.videoBlock__title=video.title
         h6.videoBlock__views=video.views
