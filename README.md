@@ -14,4 +14,3 @@ Cloning Youtube and Vanilla and NodeJS
 - [ ] Upload
 - [ ] Video Detail
 - [ ] Edit Video
-
